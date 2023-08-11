@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Documentation
 
-In the project directory, you can run:
+### GitHub Repository
+my project has been hosted on GitHub. You can access the repository at the following link:
+https://github.com/Vikramjeetblog/DynamicQuestionForm-
+### my project also depeloy on vercel . Verecel link is dynamic-question-form.vercel.app
+### Setting Up and Running the Project Locally
 
-### `npm start`
+To run the project locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the Repository:
+   ```
+   git clone https://github.com/Vikramjeetblog/DynamicQuestionForm-
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the Project Directory:
+   ```
+   cd  DynamicQuestionForm-
+   ```
 
-### `npm test`
+3. Install Dependencies:
+   ```
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the Development Server:
+   ```
+   npm start
+   ```
 
-### `npm run build`
+5 last step 
+when you write code npm start in terminal it will redirect you to localhost 3000 if dont redirected automaticallty just open broswer chrome or other broswer just write localhost 3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Project Structure and Component Explanation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Components**:
+   - `Form.js`: This React component manages the logic and rendering of the question form. It uses React state to handle user responses, validation, and navigation through the questions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Data Loading and Processing**:
+   - `data.json`: The JSON file contains the question and option data.
+   - Inside `Form.js`, the `data.json` file is imported to populate the questions and options.
+   - The `handleOptionSelect` function updates user responses and triggers conditional rendering of follow-up questions using the `followUpQuestions` property.
 
-### `npm run eject`
+3. **Styling**:
+   - `Form.css`: The CSS file contains styling rules for the form and popup message.
+   
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Challenges Faced During Development
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Conditional Rendering and Follow-Up Questions**: Implementing the logic to show follow-up questions based on user responses required careful handling of state updates and determining the appropriate question index to display.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Popup Message**: Designing and showing the popup message according to user actions involved managing state changes and CSS styles to ensure it's displayed and hidden as expected.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Styling and Layout**: Achieving the desired layout, such as the card design, spacing between options, and overall styling, required experimenting with CSS and ensuring compatibility across different screen sizes.
 
-## Learn More
+Throughout development,my I fouced on UI and implementing all the necessary functionalty and also fouced Ui should be responsive
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
