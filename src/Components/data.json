@@ -1,0 +1,73 @@
+ [
+    {
+      "id": "1",
+      "text": "Do you enjoy eating fruits?",
+      "type": "radio",
+      "options": [
+        { "id": "yes", "text": "Yes", "followUpQuestions": ["2"] },
+        { "id": "no", "text": "No" }
+      ]
+    },
+    {
+      "id": "2",
+      "text": "Select fruits you like:",
+      "type": "checkbox",
+      "mandatory": true,
+      "options": [
+        { "id": "apple", "text": "Apple", "followUpQuestions": ["3"] },
+        { "id": "banana", "text": "Banana", "followUpQuestions": ["4"] },
+        { "id": "orange", "text": "Orange", "followUpQuestions": ["5"] },
+        { "id": "grapes", "text": "Grapes", "followUpQuestions": ["6"] },
+        { "id": "strawberry", "text": "Strawberry", "followUpQuestions": ["7"] }
+      ]
+    },
+    {
+      "id": "3",
+      "text": "How often do you eat apples?",
+      "type": "radio",
+      "options": [
+        { "id": "daily", "text": "Daily" },
+        { "id": "weekly", "text": "Weekly" },
+        { "id": "rarely", "text": "Rarely" }
+      ]
+    },
+    {
+      "id": "4",
+      "text": "Do you like eating bananas in smoothies?",
+      "type": "radio",
+      "options": [
+        { "id": "yes", "text": "Yes" },
+        { "id": "no", "text": "No" }
+      ]
+    },
+    {
+      "id": "5",
+      "text": "How do you like to consume oranges?",
+      "type": "checkbox",
+      "options": [
+        { "id": "fresh", "text": "Fresh" },
+        { "id": "juice", "text": "Orange Juice" },
+        { "id": "salad", "text": "In Salads" }
+      ]
+    },
+    {
+      "id": "6",
+      "text": "Do you prefer red or green grapes?",
+      "type": "radio",
+      "options": [
+        { "id": "red", "text": "Red" },
+        { "id": "green", "text": "Green" }
+      ]
+    },
+    {
+      "id": "7",
+      "text": "Have you ever picked strawberries yourself?",
+      "type": "radio",
+      "options": [
+        { "id": "yes", "text": "Yes" },
+        { "id": "no", "text": "No" }
+      ]
+    }
+
+  ]
+  
